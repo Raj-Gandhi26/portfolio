@@ -4,9 +4,15 @@ import { Menu, X } from "lucide-react";
 
 const navItems = [
   { name: "Home", path: "/" },
+  { name: "About", path: "/about" },
   { name: "CV", path: "/cv" },
   { name: "Projects", path: "/projects" },
   { name: "Skills", path: "/skills" },
+  { name: "Leadership", path: "/leadership" },
+  { name: "Ethics", path: "/ethics" },
+  { name: "Goals", path: "/goals" },
+  { name: "Conclusion", path: "/conclusion" },
+  { name: "Testimonials", path: "/testimonials" },
   { name: "Contact", path: "/contact" },
 ];
 
@@ -35,13 +41,13 @@ export const Navbar = () => {
           </NavLink>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-1">
+          <div className="hidden md:flex items-center space-x-0.5">
             {navItems.map((item) => (
               <NavLink
                 key={item.name}
                 to={item.path}
                 end={item.path === "/"}
-                className="px-4 py-2 text-sm font-medium text-foreground/80 hover:text-neon transition-all duration-300 relative group"
+                className="px-2 py-2 text-xs font-medium text-foreground/80 hover:text-neon transition-all duration-300 relative group"
                 activeClassName="text-neon"
               >
                 {item.name}
