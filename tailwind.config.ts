@@ -57,6 +57,9 @@ export default {
           border: "hsl(var(--sidebar-border))",
           ring: "hsl(var(--sidebar-ring))",
         },
+        "neon-glow": "hsl(var(--neon-glow))",
+        "neon-glow-soft": "hsl(var(--neon-glow-soft))",
+        "accent-secondary": "hsl(var(--accent-secondary))",
       },
       borderRadius: {
         lg: "var(--radius)",

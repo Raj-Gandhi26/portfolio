@@ -104,9 +104,9 @@ const Index = () => {
       </section>
 
       {/* Footer Rights */}
-      <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t border-neon/20">
+      <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t border-border">
         <div className="container mx-auto text-center">
-          <p className="text-sm text-muted-foreground" style={{ textShadow: "0 0 10px hsl(211 100% 50% / 0.3)" }}>
+          <p className="text-sm text-muted-foreground footer-text">
             © 2025 Raj Gandhi. All rights reserved.
           </p>
         </div>
