@@ -2,6 +2,7 @@ import { TypewriterText } from "@/components/TypewriterText";
 import { FeatureCard } from "@/components/FeatureCard";
 import { SocialIcon } from "@/components/SocialIcon";
 import { FileText, Briefcase, User, Github, Linkedin, Mail } from "lucide-react";
+import { Button } from "@/components/ui/button";
 import profilePhoto from "@/assets/profile-photo.jpg";
 
 const Index = () => {
@@ -30,11 +31,14 @@ const Index = () => {
                 />
               </div>
 
-              {/* Social Icons */}
-              <div className="flex items-center space-x-4 pt-6">
-                <SocialIcon icon={Github} href="https://github.com" label="GitHub" />
-                <SocialIcon icon={Linkedin} href="https://linkedin.com" label="LinkedIn" />
-                <SocialIcon icon={Mail} href="mailto:hello@example.com" label="Email" />
+              {/* About Me Button */}
+              <div className="pt-6">
+                <Button 
+                  className="bg-card/50 border-2 border-neon/40 hover:border-neon text-neon hover:glow-neon transition-all duration-300 hover:scale-105"
+                  size="lg"
+                >
+                  About Me
+                </Button>
               </div>
             </div>
 
@@ -54,20 +58,13 @@ const Index = () => {
             </div>
           </div>
         </div>
-
-        {/* Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 animate-float">
-          <div className="w-6 h-10 border-2 border-neon/50 rounded-full flex justify-center pt-2">
-            <div className="w-1 h-2 bg-neon rounded-full animate-float" />
-          </div>
-        </div>
       </section>
 
-      {/* Feature Cards Section */}
+      {/* Technical Overview Section */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-transparent to-card/30">
         <div className="container mx-auto">
           <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-foreground">
-            Quick <span className="text-neon">Access</span>
+            Technical <span className="text-neon">Overview</span>
           </h2>
           <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
             <FeatureCard
@@ -84,13 +81,36 @@ const Index = () => {
             />
             <FeatureCard
               icon={User}
-              title="About Me"
-              description="Learn more about my background and interests"
+              title="Technical Skills"
+              description="Explore my technical expertise and capabilities"
               to="/skills"
             />
           </div>
         </div>
       </section>
+
+      {/* Let's Connect Section */}
+      <section className="py-20 px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto">
+          <h2 className="text-3xl sm:text-4xl font-bold text-center mb-12 text-foreground">
+            Let's <span className="text-neon">Connect</span>
+          </h2>
+          <div className="flex items-center justify-center space-x-6">
+            <SocialIcon icon={Github} href="https://github.com" label="GitHub" />
+            <SocialIcon icon={Linkedin} href="https://linkedin.com" label="LinkedIn" />
+            <SocialIcon icon={Mail} href="mailto:hello@example.com" label="Email" />
+          </div>
+        </div>
+      </section>
+
+      {/* Footer Rights */}
+      <footer className="py-8 px-4 sm:px-6 lg:px-8 border-t border-neon/20">
+        <div className="container mx-auto text-center">
+          <p className="text-sm text-muted-foreground" style={{ textShadow: "0 0 10px hsl(211 100% 50% / 0.3)" }}>
+            © 2025 Raj Gandhi. All rights reserved.
+          </p>
+        </div>
+      </footer>
     </div>
   );
 };

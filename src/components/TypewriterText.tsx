@@ -12,6 +12,13 @@ export const TypewriterText = ({ text, speed = 100, className = "" }: Typewriter
   const [isComplete, setIsComplete] = useState(false);
 
   useEffect(() => {
+    // Reset on mount to restart typing on every page load
+    setDisplayedText("");
+    setCurrentIndex(0);
+    setIsComplete(false);
+  }, []);
+
+  useEffect(() => {
     if (currentIndex < text.length) {
       const timeout = setTimeout(() => {
         setDisplayedText((prev) => prev + text[currentIndex]);
@@ -26,7 +33,7 @@ export const TypewriterText = ({ text, speed = 100, className = "" }: Typewriter
   return (
     <span className={className}>
       {displayedText}
-      <span className={`inline-block w-0.5 h-6 ml-1 bg-neon-glow ${isComplete ? "animate-blink" : ""}`} />
+      <span className="inline-block w-0.5 h-6 ml-1 bg-neon-glow animate-blink" style={{ boxShadow: "0 0 10px hsl(211 100% 50% / 0.8)" }} />
     </span>
   );
 };
