@@ -1,4 +1,5 @@
 import { ExternalLink, Github } from "lucide-react";
+import { Footer } from "@/components/Footer";
 
 const Projects = () => {
   const projects = [
@@ -84,6 +85,7 @@ const Projects = () => {
           ))}
         </div>
       </div>
+      <Footer />
     </div>
   );
 };

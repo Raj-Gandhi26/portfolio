@@ -1,5 +1,6 @@
 import { Download, GraduationCap, Briefcase, Code, Heart, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { Footer } from "@/components/Footer";
 
 const CV = () => {
   const handleDownloadCV = () => {
@@ -152,6 +153,7 @@ const CV = () => {
           </div>
         </section>
       </div>
+      <Footer />
     </div>
   );
 };

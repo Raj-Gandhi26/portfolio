@@ -1,4 +1,5 @@
 import { Code2, Database, Cloud, Cpu, Globe, Zap } from "lucide-react";
+import { Footer } from "@/components/Footer";
 
 const Skills = () => {
   const skillCategories = [
@@ -100,6 +101,7 @@ const Skills = () => {
           </div>
         </div>
       </div>
+      <Footer />
     </div>
   );
 };
