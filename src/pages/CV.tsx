@@ -33,14 +33,6 @@ const CV = () => {
           </div>
           <div className="space-y-4">
             <div className="bg-card border border-neon/30 rounded-lg p-6 hover:border-neon hover:glow-neon transition-all duration-300 hover:-translate-y-1">
-              <h3 className="text-xl font-bold text-neon mb-2">Master of Science in Computer Science</h3>
-              <p className="text-foreground font-medium mb-2">Massachusetts Institute of Technology (MIT)</p>
-              <p className="text-muted-foreground text-sm mb-3">2022 - 2024 | GPA: 3.9/4.0</p>
-              <p className="text-foreground/80 text-sm">
-                Specialization in Artificial Intelligence and Machine Learning. Thesis on Neural Network Optimization.
-              </p>
-            </div>
-            <div className="bg-card border border-neon/30 rounded-lg p-6 hover:border-neon hover:glow-neon transition-all duration-300 hover:-translate-y-1">
               <h3 className="text-xl font-bold text-neon mb-2">Bachelor of Science in Computer Engineering</h3>
               <p className="text-foreground font-medium mb-2">Stanford University</p>
               <p className="text-muted-foreground text-sm mb-3">2018 - 2022 | GPA: 3.85/4.0</p>
