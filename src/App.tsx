@@ -13,7 +13,6 @@ import Skills from "./pages/Skills";
 import Leadership from "./pages/Leadership";
 import Ethics from "./pages/Ethics";
 import Goals from "./pages/Goals";
-import Conclusion from "./pages/Conclusion";
 import Testimonials from "./pages/Testimonials";
 import Contact from "./pages/Contact";
 import NotFound from "./pages/NotFound";
@@ -37,7 +36,6 @@ const App = () => (
             <Route path="/leadership" element={<Leadership />} />
             <Route path="/ethics" element={<Ethics />} />
             <Route path="/goals" element={<Goals />} />
-            <Route path="/conclusion" element={<Conclusion />} />
             <Route path="/testimonials" element={<Testimonials />} />
             <Route path="/contact" element={<Contact />} />
             {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
