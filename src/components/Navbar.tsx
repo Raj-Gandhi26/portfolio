@@ -12,7 +12,6 @@ const navItems = [
   { name: "Leadership", path: "/leadership" },
   { name: "Ethics", path: "/ethics" },
   { name: "Goals", path: "/goals" },
-  { name: "Conclusion", path: "/conclusion" },
   { name: "Testimonials", path: "/testimonials" },
   { name: "Contact", path: "/contact" },
 ];
@@ -38,18 +37,18 @@ export const Navbar = () => {
     >
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <NavLink to="/" className="text-xl font-bold text-neon hover:glow-neon transition-all duration-300">
-            Portfolio
+          <NavLink to="/" className="text-2xl font-bold text-neon hover:glow-neon transition-all duration-300">
+            Raj Gandhi
           </NavLink>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex items-center space-x-0.5">
+          <div className="hidden md:flex items-center space-x-1">
             {navItems.map((item) => (
               <NavLink
                 key={item.name}
                 to={item.path}
                 end={item.path === "/"}
-                className="px-2 py-2 text-xs font-medium text-foreground/80 hover:text-neon transition-all duration-300 relative group"
+                className="px-3 py-2 text-sm font-medium text-foreground/80 hover:text-neon transition-all duration-300 relative group"
                 activeClassName="text-neon"
               >
                 {item.name}
