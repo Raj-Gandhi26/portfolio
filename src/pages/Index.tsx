@@ -14,7 +14,7 @@ const Index = () => {
             <div className="space-y-6 animate-fade-in">
               <div className="space-y-2">
                 <h1 className="text-5xl sm:text-6xl lg:text-7xl font-bold text-foreground leading-tight">
-                  Raj Gandhi         <span className="text-neon">Anderson</span>
+                  Gandhi                                                                                                                                                                                                      <span className="text-neon">Anderson</span>
                 </h1>
                 <p className="text-xl sm:text-2xl text-muted-foreground font-medium">
                   Computer Science • PDEU
