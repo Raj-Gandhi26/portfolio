@@ -1,4 +1,4 @@
-import { ExternalLink, Github } from "lucide-react";
+import { Github } from "lucide-react";
 import { Footer } from "@/components/Footer";
 
 const Projects = () => {
@@ -8,21 +8,18 @@ const Projects = () => {
       description: "Advanced optimization framework for deep learning models with custom gradient descent algorithms",
       tech: ["Python", "TensorFlow", "NumPy"],
       github: "https://github.com",
-      demo: "https://example.com",
     },
     {
       title: "Real-time Chat Platform",
       description: "Scalable chat application with WebSocket support and end-to-end encryption",
       tech: ["React", "Node.js", "Socket.io", "MongoDB"],
       github: "https://github.com",
-      demo: "https://example.com",
     },
     {
       title: "Smart Campus System",
       description: "IoT-based campus management system with real-time monitoring and analytics",
       tech: ["Go", "React", "PostgreSQL", "MQTT"],
       github: "https://github.com",
-      demo: "https://example.com",
     },
   ];
 
@@ -61,7 +58,7 @@ const Projects = () => {
                 ))}
               </div>
 
-              <div className="flex items-center space-x-4 pt-4 border-t border-neon/20">
+              <div className="flex items-center pt-4 border-t border-neon/20">
                 <a
                   href={project.github}
                   target="_blank"
@@ -70,15 +67,6 @@ const Projects = () => {
                 >
                   <Github className="w-4 h-4 mr-1" />
                   Code
-                </a>
-                <a
-                  href={project.demo}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center text-sm text-muted-foreground hover:text-neon transition-colors"
-                >
-                  <ExternalLink className="w-4 h-4 mr-1" />
-                  Demo
                 </a>
               </div>
             </div>

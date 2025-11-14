@@ -20,7 +20,7 @@ const Index = () => {
                 Hi, I'm <span className="text-neon">Raj Gandhi</span>
               </h1>
               <p className="text-xl sm:text-2xl text-muted-foreground max-w-3xl">
-                B.Tech CSE · PDEU — Developer focused on clean, secure & user-friendly systems.
+                B.Tech CSE · PDEU
               </p>
               <div className="text-lg sm:text-xl text-foreground/90 max-w-2xl">
                 <TypewriterText text="Exploring Knowledge. Building Ideas. Evolving Every Day." />
@@ -42,7 +42,7 @@ const Index = () => {
             {/* Right Side - Profile Photo */}
             <div className="flex justify-center lg:justify-end animate-fade-in" style={{ animationDelay: "0.2s" }}>
               <div className="relative">
-                <div className="absolute inset-0 bg-neon-glow rounded-full blur-2xl opacity-20 animate-soft-pulse" />
+                <div className="absolute inset-0 bg-neon-glow rounded-full blur-3xl opacity-40 animate-soft-pulse scale-110" />
                 <img
                   src={profilePhoto}
                   alt="Raj Gandhi"
@@ -55,7 +55,7 @@ const Index = () => {
       </section>
 
       {/* Technical Overview Section */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8">
+      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-transparent via-card/20 to-transparent border-y border-border/30">
         <div className="container mx-auto max-w-6xl">
           <div className="text-center mb-12 animate-fade-in">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
@@ -90,7 +90,7 @@ const Index = () => {
       </section>
 
       {/* Let's Connect Section */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8">
+      <section className="py-16 px-4 sm:px-6 lg:px-8 bg-card/10">
         <div className="container mx-auto max-w-4xl">
           <div className="text-center mb-8 animate-fade-in">
             <h2 className="text-3xl sm:text-4xl font-bold mb-4">
@@ -101,7 +101,7 @@ const Index = () => {
           <div className="flex justify-center space-x-6 animate-fade-in" style={{ animationDelay: "0.1s" }}>
             <SocialIcon icon={Github} href="https://github.com" label="GitHub" />
             <SocialIcon icon={Linkedin} href="https://linkedin.com" label="LinkedIn" />
-            <SocialIcon icon={Mail} href="mailto:raj.gandhi@example.com" label="Email" />
+            <SocialIcon icon={Mail} href="mailto:gandhiraj2605@gmail.com" label="Email" />
           </div>
         </div>
       </section>

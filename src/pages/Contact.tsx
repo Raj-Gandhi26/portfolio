@@ -1,4 +1,4 @@
-import { Mail, Phone, MapPin, Send, Github, Linkedin, Twitter } from "lucide-react";
+import { Mail, Phone, MapPin, Send, Github, Linkedin } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -36,8 +36,8 @@ const Contact = () => {
                   </div>
                   <div>
                     <p className="text-muted-foreground text-sm">Email</p>
-                    <a href="mailto:john.anderson@example.com" className="text-foreground hover:text-neon transition-colors">
-                      john.anderson@example.com
+                    <a href="mailto:gandhiraj2605@gmail.com" className="text-foreground hover:text-neon transition-colors">
+                      gandhiraj2605@gmail.com
                     </a>
                   </div>
                 </div>
@@ -70,7 +70,7 @@ const Contact = () => {
                 <div className="flex space-x-4">
                   <SocialIcon icon={Github} href="https://github.com" label="GitHub" />
                   <SocialIcon icon={Linkedin} href="https://linkedin.com" label="LinkedIn" />
-                  <SocialIcon icon={Twitter} href="https://twitter.com" label="Twitter" />
+                  <SocialIcon icon={Mail} href="mailto:gandhiraj2605@gmail.com" label="Email" />
                 </div>
               </div>
             </div>
